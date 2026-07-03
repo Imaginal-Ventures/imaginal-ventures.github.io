@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imaginal · Website · Home page variations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <style>
+    :root{
+      --ink:#13171c;
+      --bone:#f3f2eb;
+      --bone-2:#ecebe4;
+      --cell:#c8504c;
+      --slate:#5b6370;
+      --mute:#9aa0a6;
+      --rule:#d8d6cc;
+      --rule-soft:#e2e0d6;
+      --ff-display:"Cormorant Garamond",serif;
+      --ff-body:"Newsreader",serif;
+      --ff-mono:"IBM Plex Mono",monospace;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:#ecebe4;color:var(--ink);font-family:var(--ff-body);scroll-behavior:smooth}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="image-slot.js"></script>
+  <script type="text/babel" src="site-brand.jsx"></script>
+  <script type="text/babel" src="site-home-b.jsx"></script>
+  <script type="text/babel" src="site-app.jsx"></script>
+
+  <template id="__bundler_thumbnail">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100" height="100" fill="#ecebe4"/>
+      <text x="50" y="60" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="500" font-size="30" fill="#13171c">imaginal</text>
+      <line x1="20" y1="64" x2="80" y2="64" stroke="#13171c" stroke-width="1"/>
+      <circle cx="72" cy="42" r="4" fill="#c8504c"/>
+    </svg>
+  </template>
+</body>
+</html>
