@@ -159,10 +159,10 @@ function SectionHead({ ix, label, tag, dark }) {
   const slate = dark ? C.mute : C.slate;
   const ruleC = dark ? "#2a2f36" : C.rule;
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "80px 1fr 140px", gap: 24, padding: "24px 0 18px", borderTop: `1px solid ${ruleC}`, color: slate, fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", alignItems: "baseline" }}>
+    <div className="section-head" style={{ display: "grid", gridTemplateColumns: "80px 1fr 140px", gap: 24, padding: "24px 0 18px", borderTop: `1px solid ${ruleC}`, color: slate, fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", alignItems: "baseline" }}>
       <span>{ix}</span>
       <span>{label}</span>
-      <span style={{ textAlign: "right", width: "140px" }}>{tag}</span>
+      <span className="section-head-tag" style={{ textAlign: "right", width: "140px" }}>{tag}</span>
     </div>);
 }
 
@@ -170,6 +170,7 @@ function SectionHead({ ix, label, tag, dark }) {
 function NavBar({ active = "home", dark }) {
   const fg = dark ? C.bone : C.ink;
   const meta = dark ? C.mute : C.slate;
+  const [open, setOpen] = useState(false);
   const items = [
   { id: "home", label: "Home" },
   { id: "philosophy", label: "Philosophy" },
@@ -180,18 +181,28 @@ function NavBar({ active = "home", dark }) {
   { id: "notes", label: "Field Notes" }];
 
   return (
-    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", padding: "22px 0 18px", borderBottom: `1px solid ${dark ? "#2a2f36" : C.rule}` }}>
+    <div className="navbar-row" style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", padding: "22px 0 18px", borderBottom: `1px solid ${dark ? "#2a2f36" : C.rule}` }}>
       <div style={{ display: "flex", alignItems: "baseline", gap: 14 }}>
         <Wordmark width={150} fg={fg} />
         <span style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: ".14em", textTransform: "uppercase", color: meta }}>Est. 2017</span>
       </div>
-      <div style={{ display: "flex", gap: 22, flexWrap: "wrap", justifyContent: "flex-end" }}>
+      <div className={`nav-links${open ? " open" : ""}`} style={{ display: "flex", gap: 22, flexWrap: "wrap", justifyContent: "flex-end", background: dark ? C.ink : C.bone }}>
         {items.map((it) =>
-        <a key={it.id} href={`#${it.id}`} style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: it.id === active ? fg : meta, position: "relative", paddingBottom: 4, borderBottom: it.id === active ? `1px solid ${fg}` : "1px solid transparent", textDecoration: "none", whiteSpace: "nowrap" }}>
+        <a key={it.id} href={`#${it.id}`} onClick={() => setOpen(false)} style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: it.id === active ? fg : meta, position: "relative", paddingBottom: 4, borderBottom: it.id === active ? `1px solid ${fg}` : "1px solid transparent", textDecoration: "none", whiteSpace: "nowrap" }}>
             {it.label}
           </a>
         )}
       </div>
+      <button
+        className="nav-toggle"
+        onClick={() => setOpen(!open)}
+        aria-label={open ? "Close menu" : "Open menu"}
+        aria-expanded={open}
+        style={{ background: "none", border: "none", padding: 8, margin: "-8px", cursor: "pointer", flexDirection: "column", gap: 5, alignItems: "flex-end" }}>
+        <span style={{ display: "block", width: 22, height: 1.5, background: fg, transition: "transform .2s ease, opacity .2s ease", transform: open ? "translateY(6.5px) rotate(45deg)" : "none" }} />
+        <span style={{ display: "block", width: 22, height: 1.5, background: fg, opacity: open ? 0 : 1, transition: "opacity .2s ease" }} />
+        <span style={{ display: "block", width: 22, height: 1.5, background: fg, transition: "transform .2s ease, opacity .2s ease", transform: open ? "translateY(-6.5px) rotate(-45deg)" : "none" }} />
+      </button>
     </div>);
 }
 

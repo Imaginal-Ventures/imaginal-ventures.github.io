@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imaginalventures.com/sitemap.xml

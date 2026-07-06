@@ -1,0 +1,27 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap');
+    .word { font-family: "Cormorant Garamond", serif; font-style: italic; font-weight: 500; }
+    .tag { font-family: "Cormorant Garamond", serif; font-style: italic; font-weight: 500; }
+    .mono { font-family: "IBM Plex Mono", monospace; letter-spacing: 2px; text-transform: uppercase; }
+  </style>
+  <rect width="1200" height="630" fill="#13171c"/>
+  <polygon points="609.3,102 592,112 574.7,102 574.7,82 592,72 609.3,82" fill="#c8504c"/>
+
+  <defs>
+    <clipPath id="og-a"><rect x="180" y="150" width="1000" height="110" /></clipPath>
+    <clipPath id="og-b"><rect x="180" y="260" width="1000" height="130" /></clipPath>
+  </defs>
+  <g clip-path="url(#og-a)">
+    <text class="word" x="200" y="320" font-size="200" fill="none" stroke="#f3f2eb" stroke-width="1.6" stroke-linejoin="round" letter-spacing="-2">imaginal</text>
+  </g>
+  <g clip-path="url(#og-b)">
+    <text class="word" x="200" y="320" font-size="200" fill="#f3f2eb" letter-spacing="-2">imaginal</text>
+  </g>
+  <line x1="200" y1="260" x2="1000" y2="260" stroke="#f3f2eb" stroke-width="1" />
+
+  <text class="tag" x="200" y="440" font-size="34" fill="#f3f2eb">Build the business <tspan fill="#c8504c">that lasts the growth.</tspan></text>
+
+  <text class="mono" x="200" y="560" font-size="11" fill="#9aa0a6">Imaginal &#183; Est. 2017</text>
+  <text class="mono" x="1000" y="560" font-size="11" fill="#9aa0a6" text-anchor="end">imaginalventures.com</text>
+</svg>

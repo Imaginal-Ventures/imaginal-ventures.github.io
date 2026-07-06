@@ -1,0 +1,34 @@
+name: Update Substack notes
+
+on:
+  schedule:
+    - cron: "0 * * * *" # every hour
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-notes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest Substack posts
+        run: node scripts/update-substack-notes.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- docs/notes-data.js; then
+            echo "No changes to notes-data.js"
+          else
+            git add docs/notes-data.js
+            git commit -m "Update Field Notes from Substack feed"
+            git push
+          fi
