@@ -38,7 +38,14 @@ function formatDate(pubDate) {
 }
 
 async function main() {
-  const res = await fetch(FEED_URL);
+  // Substack's bot protection blocks generic Node.js fetch requests from
+  // GitHub Actions runners (403) unless a browser-like User-Agent is set.
+  const res = await fetch(FEED_URL, {
+    headers: {
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+      "Accept": "application/rss+xml, application/xml, text/xml, */*"
+    }
+  });
   if (!res.ok) throw new Error(`Feed fetch failed: ${res.status}`);
   const xml = await res.text();
 
