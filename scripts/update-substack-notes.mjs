@@ -1,33 +1,17 @@
 // Fetches the Imaginal Substack RSS feed and writes the 3 most recent posts
 // to docs/notes-data.js as window.NOTES_DATA.
 // Run on a schedule by .github/workflows/update-substack-notes.yml.
+//
+// Fetched via rss2json.com rather than hitting Substack directly: Substack's
+// bot protection blocks GitHub Actions' datacenter IP ranges outright (403),
+// regardless of headers/User-Agent. Routing through rss2json means Substack
+// sees a normal request from rss2json's own servers instead.
 
 const FEED_URL = "https://imaginalventures.substack.com/feed";
+const RSS2JSON_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(FEED_URL)}`;
 const OUT_PATH = new URL("../docs/notes-data.js", import.meta.url);
 
 const ROMAN_MONTHS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
-
-function decodeEntities(str) {
-  return str
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&#8217;/g, "’")
-    .replace(/&#8216;/g, "‘")
-    .replace(/&#8220;/g, "“")
-    .replace(/&#8221;/g, "”")
-    .replace(/&#8211;/g, "–")
-    .replace(/&#8212;/g, "—");
-}
-
-function extractTag(block, tag) {
-  const cdata = block.match(new RegExp(`<${tag}><!\\[CDATA\\[([\\s\\S]*?)\\]\\]><\\/${tag}>`));
-  if (cdata) return decodeEntities(cdata[1].trim());
-  const plain = block.match(new RegExp(`<${tag}>([\\s\\S]*?)<\\/${tag}>`));
-  return plain ? decodeEntities(plain[1].trim()) : "";
-}
 
 function formatDate(pubDate) {
   const d = new Date(pubDate);
@@ -38,32 +22,20 @@ function formatDate(pubDate) {
 }
 
 async function main() {
-  // Substack's bot protection blocks generic Node.js fetch requests from
-  // GitHub Actions runners (403) unless a browser-like User-Agent is set.
-  const res = await fetch(FEED_URL, {
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-      "Accept": "application/rss+xml, application/xml, text/xml, */*"
-    }
-  });
+  const res = await fetch(RSS2JSON_URL);
   if (!res.ok) throw new Error(`Feed fetch failed: ${res.status}`);
-  const xml = await res.text();
+  const data = await res.json();
+  if (data.status !== "ok") throw new Error(`rss2json error: ${JSON.stringify(data)}`);
 
-  const itemBlocks = xml.match(/<item>[\s\S]*?<\/item>/g) || [];
-  if (itemBlocks.length === 0) throw new Error("No <item> entries found in feed");
-
-  const allPosts = itemBlocks.map((block) => ({
-    title: extractTag(block, "title"),
-    href: extractTag(block, "link"),
-    pubDate: extractTag(block, "pubDate")
-  }));
+  const allPosts = data.items || [];
+  if (allPosts.length === 0) throw new Error("No items found in feed");
 
   const total = allPosts.length;
   const top3 = allPosts.slice(0, 3).map((post, i) => ({
     n: `No. ${String(total - i).padStart(3, "0")}`,
     date: formatDate(post.pubDate),
     title: post.title,
-    href: post.href
+    href: post.link
   }));
 
   const banner =
