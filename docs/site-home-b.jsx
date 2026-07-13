@@ -135,15 +135,15 @@ const TEAM = [
   quote: "Businesses don't transform — people do. And leaders go first.",
   img: "images/dorothy-spence-founding-partner-imaginal.jpg",
   fit: "cover",
-  position: "50% 12%"
+  position: "50% 20%"
 }];
 
 
 /* ---------- The three Imaginal values — from brand guidelines ---------- */
 const VALUES = [
 { ix: "i.", name: "Art & Science", slot: "value-art-science", caption: "Botanical / scientific plate — data meets craft", credit: "Image: Biodiversity Heritage Library · Young, Charlotte M. · 1858", img: "images/botanical-illustration-plants-domestic-economy-imaginal.jpg", imgPosition: "50% 35%", body: "We combine data-driven and neuroscience-informed methods with arts and creativity to enable inventive solutions.\n\nWe lever human responses to both art and science — both as a means to learning and processing, and as tools for creating lasting customer and employee relationships." },
-{ ix: "ii.", name: "Candid Curiosity", slot: "value-candid-curiosity", caption: "Vintage art / music graphic — play and inquiry", credit: "Image: Weezer, Pinkerton · 1997", img: "images/weezer-pinkerton-album-cover-imaginal.webp", imgPosition: "50% 0%", body: "We will always be candid and foster curiosity in our work together. Clear is kind.\n\nCuriosity is the gateway to growth. Founders access growth and uncover blind spots when they have advisors who tell them the truth." },
-{ ix: "iii.", name: "Effortful Growth", slot: "value-effortful-growth", caption: "Warm working image — sustained effort", credit: "Image: Radiohead, OK Computer · 1997", img: "images/radiohead-ok-computer-album-cover-imaginal.webp", imgPosition: "50% 0%", body: "We foster effortful growth for optimal performance at the human, team, and organization level.\n\nThe hardest things are worth doing. Founders work on decision-making collaboratively so they can forge relationships for the long term." }];
+{ ix: "ii.", name: "Candid Curiosity", slot: "value-candid-curiosity", caption: "Vintage art / music graphic — play and inquiry", credit: "Image: Weezer, Pinkerton · 1997", img: "images/weezer-pinkerton-album-cover-imaginal.webp", imgPosition: "50% 65%", body: "We will always be candid and foster curiosity in our work together. Clear is kind.\n\nCuriosity is the gateway to growth. Founders access growth and uncover blind spots when they have advisors who tell them the truth." },
+{ ix: "iii.", name: "Effortful Growth", slot: "value-effortful-growth", caption: "Warm working image — sustained effort", credit: "Image: Radiohead, OK Computer · 1997", img: "images/radiohead-ok-computer-album-cover-imaginal.webp", imgPosition: "50% 80%", body: "We foster effortful growth for optimal performance at the human, team, and organization level.\n\nThe hardest things are worth doing. Founders work on decision-making collaboratively so they can forge relationships for the long term." }];
 
 
 /* ---------- HOME ---------- */
