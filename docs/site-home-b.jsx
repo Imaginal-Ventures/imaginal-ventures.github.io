@@ -403,7 +403,7 @@ We specialize in intimate, purposeful sessions with tangible outcomes.`}
               <h3 style={{ fontFamily: F.display, fontStyle: "italic", fontWeight: 500, fontSize: 44, lineHeight: 1.05, letterSpacing: "-0.01em", margin: "14px 0 16px", textWrap: "balance" }}>If growth is the question, trust is the answer.
 
               </h3>
-              <p style={{ fontSize: 16, lineHeight: 1.55, color: C.slate, margin: 0, maxWidth: 720 }}>The Trust Diagnostic comprises twenty-one targeted statements that reveal whether your organization is reaping a Trust Dividend or paying a Trust Tax, and offers a path forward. Built by Imaginal, hosted at cbosystem.com.
+              <p style={{ fontSize: 16, lineHeight: 1.55, color: C.slate, margin: 0, maxWidth: 720 }}>The Trust Diagnostic comprises targeted questions that reveal whether your organization is reaping a Trust Dividend or paying a Trust Tax, and offers a path forward. Built by Imaginal, hosted at cbosystem.com.
 
               </p>
             </div>
