@@ -475,7 +475,7 @@ We specialize in intimate, purposeful sessions with tangible outcomes.`}
               <ul style={{ listStyle: "none", padding: 0, margin: 0, fontFamily: F.mono, fontSize: 11, letterSpacing: ".06em", lineHeight: 1.8 }}>
                 <li>Programs</li>
                 <li>Problems we solve</li>
-                <li><a href="https://www.cbosystem.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Trust Pulse ↗</a></li>
+                <li><a href="https://www.cbosystem.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Trust Diagnostic ↗</a></li>
                 <li><a href="https://imaginalventures.substack.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Field Notes ↗</a></li>
                 <li>Contact</li>
               </ul>
