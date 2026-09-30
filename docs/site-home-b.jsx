@@ -85,10 +85,10 @@ const PROGRAMS = [
 const PROBLEMS = [
 {
   ix: "I",
-  label: "Capital",
-  headline: "We need capital. On terms we can live with.",
-  body: "How much. From whom. Against what expectations. And what we'll have to build together, over five years, to create value and achieve sustainable scale.",
-  meets: "Growth Strategy Sprint"
+  label: "Stage",
+  headline: "Moving from product build to business build.",
+  body: "The product is real. The team is good. But the company has not yet become the business it needs to be — and the next year is the one where that transition either happens, or doesn't.",
+  meets: "Leadership Offsite"
 },
 {
   ix: "II",
@@ -99,10 +99,10 @@ const PROBLEMS = [
 },
 {
   ix: "III",
-  label: "Stage",
-  headline: "Moving from product build to business build.",
-  body: "The product is real. The team is good. But the company has not yet become the business it needs to be — and the next year is the one where that transition either happens, or doesn't.",
-  meets: "Leadership Offsite"
+  label: "Capital",
+  headline: "We need capital. On terms we can live with.",
+  body: "How much. From whom. Against what expectations. And what we'll have to build together, over five years, to create value and achieve sustainable scale.",
+  meets: "Growth Strategy Sprint"
 }];
 
 
@@ -117,16 +117,6 @@ const NOTES = window.NOTES_DATA || [
 
 /* ---------- Team — founders / partners ---------- */
 const TEAM = [
-{
-  id: "erin",
-  name: "Erin O'Keefe Graham",
-  role: "Managing Partner",
-  bio: "Erin O'Keefe Graham helps founders bridge the gap between traction and scale. Alongside her work at Imaginal, she is a 10-year angel investor, a member of East Valley Ventures, and an LP with Women's Equity Lab Atlantic.\n\nPrior to Imaginal, Erin led the deep tech incubator at Dalhousie University, growing venture pipeline as a feeder to CDL Atlantic and CDL Oceans, and seeing more than 400 jobs created in the region as part of alumni ventures.\n\nHer career has spanned transaction-driven marketing (IPO roadshows, brand acquisitions), global brand strategy and culture (Interbrand, KPMG Intl), and venture building across Toronto and Nova Scotia's startup ecosystems.\n\nErin's development of brand culture and behaviour transformation methodologies at Interbrand moved her from Toronto to New York headquarters and drove adoption of her tools across global B2B clients. As head of global brand for KPMG Intl, Erin managed 150 country firms as customers and rolled out purpose globally as a driver of employer brand.\n\nErin shifted her consulting practice from large enterprise to small businesses in 2018, where growth and change happen quickly, and businesses only survive through determined, intentional leadership.",
-  quote: "Leadership is relationship: when we focus on human dynamics, we set a venture in motion for sustainable scale.",
-  img: "images/erin-okeefe-graham-managing-partner-imaginal.jpg",
-  fit: "cover",
-  position: "50% 25%"
-},
 {
   id: "partner",
   name: "Dorothy Spence",
@@ -238,7 +228,7 @@ Imaginal exists for this work.`}</p>
 Ventures with traction are in this interim stage of growth: the founder is carrying a vision that the current organization can’t yet carry out. The team is a group of capable individuals, but they lack collective capability.
 
 Growth-stage ventures need to activate a blueprint for scale that’s unique to their business. It requires a founder who can see the future clearly and build toward it deliberately. And it requires a shift from a founder-dependent startup to a team with collective capability, designed to create greater value and impact together.`}</p>
-              <p style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: C.mute, marginTop: 28 }}>Erin O'Keefe Graham · Managing Partner</p>
+              <p style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: C.mute, marginTop: 28 }}>Dorothy Spence · Founding Partner</p>
             </div>
           </div>
 
@@ -448,6 +438,14 @@ We specialize in intimate, purposeful sessions with tangible outcomes.`}
               Subscribe on Substack ↗
             </a>
           </div>
+          <div style={{ marginTop: 20, paddingTop: 20, borderTop: `1px solid ${C.rule}`, display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 24 }}>
+            <p style={{ fontFamily: F.body, fontStyle: "italic", fontSize: 17, color: C.slate, margin: 0 }}>
+              <em>Trust Is Not a KPI</em> — on why trust is built through behaviour, not measured into being. By Dorothy Spence.
+            </p>
+            <a href="https://www.linkedin.com/newsletters/trust-is-not-a-kpi-7480956754877521922/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".18em", textTransform: "uppercase", color: C.ink, textDecoration: "none", borderBottom: `1px solid ${C.ink}`, paddingBottom: 4 }}>
+              Subscribe on LinkedIn ↗
+            </a>
+          </div>
         </section>
 
         {/* §07 CTA */}
@@ -460,7 +458,7 @@ We specialize in intimate, purposeful sessions with tangible outcomes.`}
               </h3>
             </div>
             <div className="cta-btn-wrap" style={{ textAlign: "right" }}>
-              <a href="mailto:erin@imaginalventures.com" style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".18em", textTransform: "uppercase", background: C.bone, color: C.ink, padding: "18px 28px", display: "inline-block", textDecoration: "none" }}>Begin →</a>
+              <a href="mailto:dorothy@imaginalventures.com" style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".18em", textTransform: "uppercase", background: C.bone, color: C.ink, padding: "18px 28px", display: "inline-block", textDecoration: "none" }}>Begin →</a>
             </div>
           </div>
         </section>
@@ -485,7 +483,7 @@ We specialize in intimate, purposeful sessions with tangible outcomes.`}
             <div>
               <h6 style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: ".14em", textTransform: "uppercase", color: C.mute, margin: "0 0 12px", fontWeight: 400 }}>Correspondence</h6>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, fontFamily: F.mono, fontSize: 11, letterSpacing: ".06em", lineHeight: 1.8 }}>
-                <li>erin@imaginalventures.com</li>
+                <li>dorothy@imaginalventures.com</li>
                 <li>Imaginal · Est. 2017</li>
               </ul>
             </div>
