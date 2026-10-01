@@ -126,6 +126,16 @@ const TEAM = [
   img: "images/dorothy-spence-founding-partner-imaginal.jpg",
   fit: "cover",
   position: "50% 20%"
+},
+{
+  id: "tracy",
+  name: "Tracy Gravesande",
+  role: "Product Architect",
+  bio: "Tracy works with businesses and their leadership teams to translate deep expertise, proprietary methodologies, and operational know-how into structured, repeatable service solutions. Rather than leaving critical knowledge locked in people's heads or scattered across ad-hoc processes, she designs the frameworks, tools, and delivery models that turn that expertise into a tangible, scalable asset — one that clients can deploy consistently, price confidently, and grow with.\n\nHer expertise and experience were first gained in the corporate sector in Canada and the UK as a Learning and Development and Performance Consultant, before moving to work with a global business advisory firm in London that developed proprietary methodologies supporting SMEs and entrepreneurs to grow, fund, or exit their businesses.\n\nDrawing on a background that spans financial services, professional services, consulting, and learning and development, Tracy bridges the gap between what an organisation knows and how that knowledge gets delivered as value, building the architecture behind diagnostic tools and client-facing offerings that are built to last beyond any single individual.",
+  quote: "Designing structures that turn expertise and methodology into scalable, deliverable service solutions.",
+  img: "images/tracy-gravesande-product-architect-imaginal.jpg",
+  fit: "cover",
+  position: "50% 30%"
 }];
 
 
