@@ -209,7 +209,7 @@ function NavBar({ active = "home", dark }) {
 /* ---------- COPY DATA (placeholders — replace with real spreadsheet content) ---------- */
 const COPY = {
   tagline: "The line where the hidden becomes visible — and stays.",
-  premise: "Imaginal helps purpose-led founders build ventures through the growth stage. Since 2017, we have taken more than 300 ventures through Scale-Up and Investment programs — most of them women-led, many built in cleantech and healthcare, all of them serious about the work scale actually requires.",
+  premise: "Imaginal helps purpose-led leaders build ventures through the growth stage. Since 2017, we have taken more than 300 ventures through Scale-Up and Investment programs — most of them women-led, many built in cleantech and healthcare, all of them serious about the work scale actually requires.",
   proof: [
   { n: "300+", label: "ventures supported" },
   { n: "$30.4m", label: "Total funds raised by ventures in 2023–2025 cohorts" },

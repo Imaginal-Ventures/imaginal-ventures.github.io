@@ -54,30 +54,23 @@ function PhaseLabel({ label, sub, accent }) {
 const PROGRAMS = [
 {
   code: "01",
-  name: "Growth Strategy Sprint",
+  name: "Team Scaling Sprint",
   duration: "Design Sprint · 3–5 days",
-  body: "Close the growth strategy gap that sits upstream of funding. Determine what is genuinely desirable, financially viable, and operationally feasible as a venture, before you raise your next round.\n\nParticipants in growth strategy cohorts are eligible for The Pitch Lab, a curated group of investors matched to the cohort's sector focus.",
+  body: "Develop a people roadmap that is as critical to success as product roadmaps were to securing first pilot customers. Identify essential team capabilities, assess current capacity, and model future scenarios based on customer needs.\n\nLeaders determine how to offload key responsibilities over time, and develop tools to attract, secure and retain essential people.",
   tag: "By cohort or custom engagements"
 },
 {
   code: "02",
-  name: "Team Scaling Sprint",
-  duration: "Design Sprint · 3–5 days",
-  body: "Develop a people roadmap that is as critical to success as product roadmaps were to securing first pilot customers. Identify essential team capabilities, assess current capacity, and model future scenarios based on customer needs.\n\nFounders determine how to offload key responsibilities over time, and develop tools to attract, secure and retain essential people.",
-  tag: "By cohort or custom engagements"
-},
-{
-  code: "03",
   name: "Advisory",
   duration: "Consult · Ongoing",
-  body: "Our strategic relationship picks up where the sprint ends, or begins where a founder needs a thinking partner most. We work directly with founders navigating the shift from traction to scale on the decision that lever growth: capital strategy, team architecture, and moving from founder-led to leadership-led. \nAdvisory is powered by the Conscious Business Operating System, Imaginal's OS platform that integrates the business mechanics of scale with the human dynamics systems that enable teams to implement with velocity.",
+  body: "Our strategic relationship picks up where the sprint ends, or begins where a leader needs a thinking partner most. We work directly with leaders navigating the shift from traction to scale on the decision that lever growth: capital strategy, team architecture, and moving from founder-led to leadership-led. \nAdvisory is powered by the Conscious Business Operating System, Imaginal's OS platform that integrates the business mechanics of scale with the human dynamics systems that enable teams to implement with velocity.",
   tag: "Entry · Initial consult"
 },
 {
-  code: "04",
+  code: "03",
   name: "Leadership Offsite",
   duration: "Offsite · 2–3 days",
-  body: "Custom-designed offsites that turn a leadership group into a leadership team. Designed for the founder who needs to shift from owning everything — from being the bottleneck to building collective capability.\n\nWe work with teams who recognize that making decisions together about their future reduces co-founder conflict, and improves their ability to implement with velocity.",
+  body: "Custom-designed offsites that turn a leadership group into a leadership team. Designed for the leader who needs to shift from owning everything — from being the bottleneck to building collective capability.\n\nWe work with teams who recognize that making decisions together about their future reduces co-founder conflict, and improves their ability to implement with velocity.",
   tag: "Custom engagements"
 }];
 
@@ -102,7 +95,7 @@ const PROBLEMS = [
   label: "Capital",
   headline: "We need capital. On terms we can live with.",
   body: "How much. From whom. Against what expectations. And what we'll have to build together, over five years, to create value and achieve sustainable scale.",
-  meets: "Growth Strategy Sprint"
+  meets: "Advisory"
 }];
 
 
@@ -121,7 +114,7 @@ const TEAM = [
   id: "partner",
   name: "Dorothy Spence",
   role: "Founding Partner",
-  bio: "Dorothy Spence works with founders and leaders who want to build businesses that perform from the inside out — where purpose and commercial return reinforce each other rather than compete.\n\nAs Founding Partner of Imaginal Ventures and creator of the Conscious Business Operating System, Dorothy brings together two things most advisory firms keep separate: the rigour of business mechanics and the depth of human dynamics. She works primarily with healthtech and cleantech founders, and with women innovators building companies that are meant to last.\n\nHer path to this work spans three chapters. She began analytically — an engineering degree, an MBA, and her first company as co-founder and CEO of a national healthtech firm scaled across Canada. A second chapter brought a deliberate turn inward: coaching certification, deep study in human development, and years working on the inner dimensions of leadership.\n\nThose two worlds came together at a global business advisory firm in London. She left to found Imaginal Ventures, where she created the Conscious Business Operating System — now applied with over 300 businesses across Canada, the US, and Europe. Dorothy has served on advisory boards for Canada Health Infoway and the Atlantic Canada Economic Council, as a board member at Mount Saint Vincent University, and is completing the Canadian Council of Innovators Governance program.",
+  bio: "Dorothy Spence works with leaders who want to build businesses that perform from the inside out — where purpose and commercial return reinforce each other rather than compete.\n\nAs Founding Partner of Imaginal Ventures and creator of the Conscious Business Operating System, Dorothy brings together two things most advisory firms keep separate: the rigour of business mechanics and the depth of human dynamics. She works primarily with healthtech and cleantech leaders, and with women innovators building companies that are meant to last.\n\nHer path to this work spans three chapters. She began analytically — an engineering degree, an MBA, and her first company as co-founder and CEO of a national healthtech firm scaled across Canada. A second chapter brought a deliberate turn inward: coaching certification, deep study in human development, and years working on the inner dimensions of leadership.\n\nThose two worlds came together at a global business advisory firm in London. She left to found Imaginal Ventures, where she created the Conscious Business Operating System — now applied with over 300 businesses across Canada, the US, and Europe. Dorothy has served on advisory boards for Canada Health Infoway and the Atlantic Canada Economic Council, as a board member at Mount Saint Vincent University, and is completing the Canadian Council of Innovators Governance program.",
   quote: "Businesses don't transform — people do. And leaders go first.",
   img: "images/dorothy-spence-founding-partner-imaginal.jpg",
   fit: "cover",
@@ -142,8 +135,8 @@ const TEAM = [
 /* ---------- The three Imaginal values — from brand guidelines ---------- */
 const VALUES = [
 { ix: "i.", name: "Art & Science", slot: "value-art-science", caption: "Botanical / scientific plate — data meets craft", credit: "Image: Biodiversity Heritage Library · Young, Charlotte M. · 1858", img: "images/botanical-illustration-plants-domestic-economy-imaginal.jpg", imgPosition: "50% 35%", body: "We combine data-driven and neuroscience-informed methods with arts and creativity to enable inventive solutions.\n\nWe lever human responses to both art and science — both as a means to learning and processing, and as tools for creating lasting customer and employee relationships." },
-{ ix: "ii.", name: "Candid Curiosity", slot: "value-candid-curiosity", caption: "Vintage art / music graphic — play and inquiry", credit: "Image: Weezer, Pinkerton · 1997", img: "images/weezer-pinkerton-album-cover-imaginal.webp", imgPosition: "50% 65%", body: "We will always be candid and foster curiosity in our work together. Clear is kind.\n\nCuriosity is the gateway to growth. Founders access growth and uncover blind spots when they have advisors who tell them the truth." },
-{ ix: "iii.", name: "Effortful Growth", slot: "value-effortful-growth", caption: "Warm working image — sustained effort", credit: "Image: Radiohead, OK Computer · 1997", img: "images/radiohead-ok-computer-album-cover-imaginal.webp", imgPosition: "50% 80%", body: "We foster effortful growth for optimal performance at the human, team, and organization level.\n\nThe hardest things are worth doing. Founders work on decision-making collaboratively so they can forge relationships for the long term." }];
+{ ix: "ii.", name: "Candid Curiosity", slot: "value-candid-curiosity", caption: "Vintage art / music graphic — play and inquiry", credit: "Image: Weezer, Pinkerton · 1997", img: "images/weezer-pinkerton-album-cover-imaginal.webp", imgPosition: "50% 65%", body: "We will always be candid and foster curiosity in our work together. Clear is kind.\n\nCuriosity is the gateway to growth. Leaders access growth and uncover blind spots when they have advisors who tell them the truth." },
+{ ix: "iii.", name: "Effortful Growth", slot: "value-effortful-growth", caption: "Warm working image — sustained effort", credit: "Image: Radiohead, OK Computer · 1997", img: "images/radiohead-ok-computer-album-cover-imaginal.webp", imgPosition: "50% 80%", body: "We foster effortful growth for optimal performance at the human, team, and organization level.\n\nThe hardest things are worth doing. Leaders work on decision-making collaboratively so they can forge relationships for the long term." }];
 
 
 /* ---------- HOME ---------- */
@@ -175,7 +168,7 @@ function HomeVariationB() {
         {/* Right: copy */}
         <div className="hero-copy" style={{ padding: "72px 64px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
           <div>
-            <p style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: C.cell, margin: 0 }}>Imaginal · for purpose-led founders</p>
+            <p style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: C.cell, margin: 0 }}>Imaginal · for purpose-led leaders</p>
             <h1 className="hero-h1" style={{ fontFamily: F.display, fontStyle: "italic", fontWeight: 500, fontSize: 88, lineHeight: 1.02, letterSpacing: "-0.02em", margin: "20px 0 28px", textWrap: "pretty" }}>
               Build the business<br className="hero-break" />{" "}
               that <em style={{ color: C.cell }}>lasts the growth.</em>
@@ -235,9 +228,9 @@ Imaginal exists for this work.`}</p>
             <div>
               <p style={{ fontFamily: F.body, fontSize: 17, lineHeight: 1.65, color: C.slate, margin: 0, whiteSpace: "pre-line" }}>{`Imaginal cells carry the genetic blueprint for an organism’s future form. They lie dormant until conditions are right for transformation. Existing structures must dissolve for the new form to emerge.
 
-Ventures with traction are in this interim stage of growth: the founder is carrying a vision that the current organization can’t yet carry out. The team is a group of capable individuals, but they lack collective capability.
+Ventures with traction are in this interim stage of growth: the leader is carrying a vision that the current organization can’t yet carry out. The team is a group of capable individuals, but they lack collective capability.
 
-Growth-stage ventures need to activate a blueprint for scale that’s unique to their business. It requires a founder who can see the future clearly and build toward it deliberately. And it requires a shift from a founder-dependent startup to a team with collective capability, designed to create greater value and impact together.`}</p>
+Growth-stage ventures need to activate a blueprint for scale that’s unique to their business. It requires a leader who can see the future clearly and build toward it deliberately. And it requires a shift from a founder-dependent startup to a team with collective capability, designed to create greater value and impact together.`}</p>
               <p style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: C.mute, marginTop: 28 }}>Dorothy Spence · Founding Partner</p>
             </div>
           </div>
@@ -246,10 +239,10 @@ Growth-stage ventures need to activate a blueprint for scale that’s unique to 
           <div style={{ marginTop: 72, paddingTop: 28, borderTop: `1px solid ${C.ink}` }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 28, fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: C.slate }}>
               <span>Three values · how we show up</span>
-              <span style={{ color: C.mute }}>What founders experience</span>
+              <span style={{ color: C.mute }}>What leaders experience</span>
             </div>
             <p style={{ fontFamily: F.display, fontStyle: "italic", fontWeight: 500, fontSize: 28, lineHeight: 1.25, color: C.ink, maxWidth: 880, margin: "0 0 32px", textWrap: "balance" }}>
-              Our values are our beliefs in action: what founders experience when they work with us.
+              Our values are our beliefs in action: what leaders experience when they work with us.
             </p>
             <div className="values-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 0 }}>
               {VALUES.map((v, i) => <div key={i} className="values-item" style={{ borderTop: `1px solid ${C.rule}`, borderLeft: i === 0 ? "none" : `1px solid ${C.ruleSoft}`, padding: "20px 24px 8px" }}>
@@ -320,9 +313,9 @@ We specialize in intimate, purposeful sessions with tangible outcomes.`}
 
         {/* §03 PROBLEMS WORTH SOLVING */}
         <section id="problems" style={{ padding: "32px 0 64px" }}>
-          <SectionHead ix="§ 03" label="Problems Worth Solving" tag="What founders bring us" />
+          <SectionHead ix="§ 03" label="Problems Worth Solving" tag="What leaders bring us" />
           <p style={{ fontFamily: F.display, fontStyle: "italic", fontWeight: 500, fontSize: 36, lineHeight: 1.2, color: C.ink, maxWidth: 880, margin: "32px 0 36px", textWrap: "balance" }}>
-            Three problems we are hearing, in nearly every founder conversation we have.
+            Three problems we are hearing, in nearly every conversation we have with leaders.
           </p>
           <div className="problems-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: C.rule, border: `1px solid ${C.rule}` }}>
             {PROBLEMS.map((p, i) =>
@@ -358,18 +351,17 @@ We specialize in intimate, purposeful sessions with tangible outcomes.`}
             </div>
           </div>
 
-          <SectionHead ix="§ 04" label="Offering" tag="Four engagements" />
+          <SectionHead ix="§ 04" label="Offering" tag="Three engagements" />
 
-          <div className="programs-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 1, background: C.rule, border: `1px solid ${C.rule}`, marginTop: 36 }}>
+          <div className="programs-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: C.rule, border: `1px solid ${C.rule}`, marginTop: 36 }}>
             {PROGRAMS.map((p, i) =>
             <div key={i} style={{ background: C.bone, padding: "32px 28px", display: "flex", flexDirection: "column" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 18 }}>
-                  <span style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: C.cell }}>№ {p.code}</span>
-                  <span style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: ".14em", textTransform: "uppercase", color: C.mute }}>{p.duration}</span>
+                <div style={{ display: "flex", justifyContent: "space-between", gap: 12, marginBottom: 18 }}>
+                  <span style={{ fontFamily: F.mono, fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: C.cell, whiteSpace: "nowrap" }}>№ {p.code}</span>
+                  <span style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: ".14em", textTransform: "uppercase", color: C.mute, textAlign: "right" }}>{p.duration}</span>
                 </div>
                 <h4 style={{ fontFamily: F.display, fontStyle: "italic", fontWeight: 500, fontSize: 38, margin: "0 0 14px", lineHeight: 1.1, letterSpacing: "-0.01em" }}>{p.name}</h4>
                 <p style={{ fontSize: 15, lineHeight: 1.55, color: C.slate, margin: 0, whiteSpace: "pre-line" }}>{p.body}</p>
-                <span style={{ fontFamily: F.mono, fontSize: 10, letterSpacing: ".14em", textTransform: "uppercase", color: C.slate, marginTop: "auto", paddingTop: 24 }}>{p.tag}</span>
               </div>
             )}
           </div>
