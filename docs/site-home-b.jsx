@@ -94,7 +94,7 @@ const PROBLEMS = [
   ix: "III",
   label: "Capital",
   headline: "We need capital. On terms we can live with.",
-  body: "How much. From whom. Against what expectations. And what we'll have to build together, over five years, to create value and achieve sustainable scale.",
+  body: "How much. From whom. Against what expectations. And what we'll have to build together to create value and achieve sustainable scale.",
   meets: "Advisory"
 }];
 
